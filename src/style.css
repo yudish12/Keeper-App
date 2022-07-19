@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat&family=Permanent+Marker&family=Ubuntu&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 18px 36px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  header h1{
+    color: white;
+    font-family: 'McLaren';
+    font-size: 2rem;
+  }
+  .note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 1.5rem;
+    min-width: 15rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.8rem;
+    float: left;
+  }
+  .note h1 {
+    font-size: 1.3em;
+    margin-bottom: 0.375rem;
+  }
+  .note p {
+    font-size: 1.3em;
+    margin-bottom: 0.625rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    min-height: 3.5rem;
+    background-color: gray;;
+    margin-top: 37.5rem;
+  }
+  
+  footer p {
+    margin-top: 0.8rem;
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(2rem, 1fr));
+  }
+  form {
+    font-family: Ubuntu;
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  form button {
+    position: absolute;
+    top: 5.5rem;
+    right: 18px;
+    bottom: 8px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+  }
+  form button:hover{
+    background-color: gray;
+  }
+  .del{
+    font-size: 1rem;
+    color: #000000;
+    padding: 0.2rem 0.2rem;
+border-radius: 8px;
+border: 2px solid #f5ba13;
+background-color: #f5ba13;
+color: white;
+float: right;
+  }
+  @media (max-width:500px){
+    form{
+      width: 200px;
+    }
+    form button{
+      width: 35px;
+      height: 35px;
+      font-size: 1.5rem;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    header{
+      justify-content: center;
+      align-items: center;
+    }
+  }
