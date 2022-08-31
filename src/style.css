@@ -46,7 +46,6 @@
     width: 100%;
     min-height: 3.5rem;
     background-color: gray;;
-    margin-top: 37.5rem;
   }
   
   footer p {
@@ -108,6 +107,12 @@ background-color: #f5ba13;
 color: white;
 float: right;
   }
+  .paper{
+    text-align: center;
+    margin: 10rem auto;
+    height: 200px;
+    width: 80%;
+  }
   @media (max-width:500px){
     form{
       width: 200px;
@@ -126,3 +131,30 @@ float: right;
       align-items: center;
     }
   }
+  .home{
+    height: 100vh;
+  }
+  .auth{
+    height: 94vh;
+  }
+  .form{
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .btn{
+    background-color: #f5ba13;
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+  }
+  .pad-2{
+    padding: 1rem;
+  }
+  /* .notesSection{
+    display: flex;
+    flex-direction: column;
+    
+  } */

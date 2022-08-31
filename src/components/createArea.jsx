@@ -3,7 +3,7 @@ import React from "react";
 function CreateArea(props) {
     const[noteObj,setNoteObj] = React.useState({
         title:"",
-        content:""
+        task:""
     })
     function change(e){
         setNoteObj(prev =>{
@@ -22,7 +22,7 @@ function CreateArea(props) {
     <div>
       <form>
         <input name="title" placeholder="Title" onChange={change} value={noteObj.title}/>
-        <textarea name="content" placeholder="Take a note..." rows="3" onChange={change} value={noteObj.content}/>
+        <textarea name="task" placeholder="Take a note..." rows="3" onChange={change} value={noteObj.task}/>
         <button onClick={submitNote}>+</button>
       </form>
     </div>
